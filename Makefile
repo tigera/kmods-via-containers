@@ -9,4 +9,5 @@ install:
 	install -v -m 644 kmods-via-containers.conf $(FAKEROOT)/root/etc/kvc/
 	install -v -m 755 -d $(FAKEROOT)/root/etc/systemd/system
 	install -v -m 644 kmods-via-containers@.service $(FAKEROOT)/root/etc/systemd/system/
+	install -v -m 644 kmods-via-containers@wireguard-kmod.service $(FAKEROOT)/root/etc/systemd/system/
 	install -v -m 755 -d $(FAKEROOT)/root/etc/kvc/lib/kvc
